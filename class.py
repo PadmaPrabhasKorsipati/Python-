@@ -251,11 +251,12 @@ for i in range(1,max(num1,num2)):
 print(lcm)
 """
 
-
+"""""
 element=int(input(""))
 list1=[1,2,3,1,1,5,9]
 list2=[i for i in  list1 if element not in list1]
 print(list2)
+"""""
 
 
 
