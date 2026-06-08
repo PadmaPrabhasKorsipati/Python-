@@ -150,7 +150,7 @@ for k in li3:
     print(" ")
 
 """
-
+"""
 X=[[1,2],
    [5,3]]
 Y=[[2,3],
@@ -168,3 +168,12 @@ for i in range(len(X)):
 
 for r in result:
    print(r)
+"""
+
+
+
+#indexing
+
+
+inp='Hello World'
+print(inp[::-2])

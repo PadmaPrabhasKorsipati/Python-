@@ -166,7 +166,9 @@ print(l)
 
 
 
+courses=['History','Math','Physics','Compsci']
 
+print(courses[0:2])
 
 
 
