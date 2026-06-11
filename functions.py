@@ -71,10 +71,10 @@ def is_leap(year):
 
 def num_days(year,month):
 
-    if 1> month > 12:
+    if 1> month or month > 12:
         return 'month is invalid'
     
-    if month==2 and is_leap:
+    if month==2 and is_leap(year):
         return 29
     
     return months[month]
