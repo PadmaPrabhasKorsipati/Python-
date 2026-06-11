@@ -61,21 +61,25 @@ if (i+j+k)!=n]
 print(coordinate)'''
 
 
-#factorial
-def factorial(n):
-    mul=1
-    while i!=0:
-        mul*=i
-        i-=1
-    print(mul)
 
-num=int(input(""))
-factorial(num)
+months =[0,31,28,31,30,31,30,31,31,30,31,30,31]
+
+def is_leap(year):
+
+    return ((year%4==0) and (year%100!=0 or year%400==0))
 
 
+def num_days(year,month):
 
+    if 1< month > 12:
+        return 'month is invalid'
+    
+    if month==2 and is_leap:
+        return 29
+    
+    return months[month]
 
-
+print(num_days(0))
 
 
 
