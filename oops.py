@@ -1,12 +1,37 @@
-from car import car
+
+class student:
+
+    year=2024
+
+    num_students=0
 
 
-car1=car("Mustang",2014,"Black",False)
+    def __init__(self,name,age):
+        
+        self.name=name
+        self.age=age
 
-car2=car("Audi",2019,"White",True)
+        self.num_students+=1
 
-car3=car("BMW",2023,"Blue",False)
+    
+student1=student("Spongebob",23)
+student2=student("patrick",27)
+student3=student("squidward",31)
+student4=student("sandy",33)
+
+print(f" My Graduating class of {student.year} year has {student.num_students} students.")
+
+    
 
 
-car1.drive()
+
+
+
+
+
+
+
+
+
+
 
