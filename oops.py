@@ -11,7 +11,7 @@ class student:
         self.name=name
         self.age=age
 
-        self.num_students+=1
+        student.num_students+=1
 
     
 student1=student("Spongebob",23)
