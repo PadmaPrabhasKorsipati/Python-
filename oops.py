@@ -1,29 +1,46 @@
 
-class student:
 
-    year=2024
+class Animals:
 
-    num_students=0
+    def __init__(self,name):
 
-
-    def __init__(self,name,age):
-        
         self.name=name
-        self.age=age
 
-        student.num_students+=1
+        self.is_alive=True
 
+
+    def eat(self):
+
+        print(f"{self.name} is eating")
     
-student1=student("Spongebob",23)
-student2=student("patrick",27)
-student3=student("squidward",31)
-student4=student("sandy",33)
+    def sleep(self):
 
-print(f" My Graduating class of {student.year} year has {student.num_students} students.")
-
-    
+        print(f"{self.name} is sleeping")
 
 
+
+
+
+class Dog(Animals):
+    pass
+
+
+class Cat(Animals):
+    pass
+
+class Mouse(Animals):
+    pass
+
+
+dog=Dog("Shiro")
+cat=Cat("Garfield")
+mouse=Mouse("Jerry")
+
+
+print(dog.name)
+print(dog.is_alive)
+
+        
 
 
 
