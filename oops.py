@@ -37,11 +37,11 @@ cat=Cat("Garfield")
 mouse=Mouse("Jerry")
 
 
-print(dog.name)
-print(dog.is_alive)
+print(cat.name)
+print(cat.is_alive)
 
-dog.eat()
-dog.sleep()
+cat.eat()
+cat.sleep()
 
 
         
