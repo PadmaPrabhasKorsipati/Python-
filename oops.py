@@ -19,17 +19,19 @@ class Animals:
 
 
 
-
-
 class Dog(Animals):
-    pass
+    def speak(self):
+        print("Bow!")
 
 
 class Cat(Animals):
-    pass
+    def speak(self):
+        print("Meow!")
+
 
 class Mouse(Animals):
-    pass
+    def speak(self):
+        print("Squeek!")
 
 
 dog=Dog("Shiro")
@@ -42,6 +44,7 @@ print(cat.is_alive)
 
 cat.eat()
 cat.sleep()
+cat.speak()
 
 
         
