@@ -40,6 +40,10 @@ mouse=Mouse("Jerry")
 print(dog.name)
 print(dog.is_alive)
 
+dog.eat()
+dog.sleep()
+
+
         
 
 
