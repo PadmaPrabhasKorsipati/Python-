@@ -22,8 +22,8 @@ for a in A:
                 c+=chr((inv*(ord(ch)-65-b))%26+65)
 
             else:
-                p+=ch
+                c+=ch
 
-        print("a=",a,"b=",b,":",p)
+        print("a=",a,"b=",b,":",c)
 
 
