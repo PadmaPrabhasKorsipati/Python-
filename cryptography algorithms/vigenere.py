@@ -23,7 +23,7 @@ c=""
 for i in range(len(p)):
 
     if e[i].isalpha():
-        c+=chr((ord(e[i]-65 -ord(key[i%len(key)])-65))%26 +65)
+        c+=chr((ord(e[i])-65 -(ord(key[i%len(key)])-65))%26 +65)
 
     else:
         c+=e[i]
