@@ -1,6 +1,6 @@
-p=input("Enter the plain text:")
+p=input("Enter the plain text:").upper()
 
-key=input("Enter the key text:");
+key=input("Enter the key text:").upper();
 
 
 e=""
