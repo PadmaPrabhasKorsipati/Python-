@@ -1,15 +1,40 @@
-p=input("Enter the text:").upper()
-a=int(input("Enter a:"))
-b=int(input("Enter b:"))
+p=input("Plain text:").upper()
 
-r=""
+a=int(input("a:"))
+
+b=int(input("b:"))
+
+e=""
 
 for c in p:
+
     if c.isalpha():
-        r+=chr((a*ord(c)-65+b)%26 +65)
+        e+=chr((a*ord(c)-65 +b)%26 +65)
 
     else:
-        r+=c
+        e+=c
 
-print("Encrypted",r)
+print("Encrypted:",e)
+
+for x in range(26):
+
+    if(a*x)%26==1:
+        inv=x
+        break
+
+d=""
+for c in e:
+
+    if c.isalpha():
+        d+=chr((inv*((ord(c)-65)-b))%26+65)
+
+    else:
+        d+=c
+
+print("Decrypted:",d)
+
+    
+
+
+
 
