@@ -22,6 +22,6 @@ for i in e:
         p+=chr(k.index(i)+65)
 
     else:
-        P+=i
+        p+=i
 
 print(f"Decrypted text:{p}")
