@@ -13,7 +13,7 @@ for a in A:
                 break
 
 
-        p=""
+        c=""
 
 
         for ch in p:
