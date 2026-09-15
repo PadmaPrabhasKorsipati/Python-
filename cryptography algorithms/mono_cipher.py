@@ -1,4 +1,4 @@
-p=input("Enter text:")
+p=input("Enter text:").upper()
 k=input("Enter key:")
 
 e=""
