@@ -6,7 +6,7 @@ e=""
 for i in c:
 
     if i.isalpha():
-        e+=k[ord[i]-65]
+        e+=k[ord(i)-65]
 
     else:
         e+=i
