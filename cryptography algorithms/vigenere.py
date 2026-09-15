@@ -1,14 +1,31 @@
-p=input("Enter text: ").upper()
-key=input("Enter key: ").upper()
+p=input("Enter the plain text:")
 
-r=""
-j=0
-for c in p:
-    if c.isalpha():
-        r+=chr((ord(c)-65+ord(key[j%len(key)])-65)%26+65)
-        j+=1
+key=input("Enter the key text:");
+
+
+e=""
+
+for i in range(len(p)):
+
+
+    if p[i].isalpha():
+        e+=chr((ord(p[i])-65 + ord(key[i%len(key)])-65)%26 +65)
 
     else:
-        r+=c
-print("Encrypted:",r)
+        e+=p[i]
 
+
+print(f"Encrypted text:{e}")
+
+
+c=""
+
+for i in range(len(p)):
+
+    if e[i].isalpha():
+        c+=chr((ord(e[i]-65 -ord(key[i%len(key)])-65))%26 +65)
+
+    else:
+        c+=e[i]
+
+print(f"Decrypted text:{c}")
