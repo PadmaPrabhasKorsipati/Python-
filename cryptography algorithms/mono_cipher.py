@@ -1,15 +1,27 @@
-p=input("Enter text")
-key=input("Enter key:").upper()
+c=input("Enter text:")
+k=input("Enter text:")
 
-def encrypt(s):
-    r=""
+e=""
 
-    for c in s:
+for i in c:
 
-        r+=key[ord(c)-65] if c.isalpha() else c
+    if i.isalpha():
+        e+=k[ord[i]-65]
 
-    return r
+    else:
+        e+=i
+
+print(f"Encrypted text:{e}")
 
 
-e = encrypt(p.upper())
-print("Encrypted:", e)
+p=""
+
+for i in e:
+
+    if i.isalpha():
+        p+=chr(k.index(i)+65)
+
+    else:
+        P+=i
+
+print(f"Decrypted text:{p}")
