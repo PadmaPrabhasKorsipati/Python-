@@ -9,7 +9,7 @@ for c in key + "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
         s+=c
 
 
-m=[s[p[i:i+5]] for i in range(0,25,5)]
+m=[s[i:i+5] for i in range(0,25,5)]
 
 def  pos(c):
 
