@@ -5,7 +5,7 @@ e=""
 
 for i in range(len(p)):
 
-    if k[i].isalpha():
+    if p[i].isalpha():
         e+=chr((ord(k[i])-65 + ord(k[i%len(k)])-65)%26 + 65)
 
     else:
@@ -17,7 +17,7 @@ d=""
 
 for i in range(len(e)):
 
-    if k[i].isalpha():
+    if e[i].isalpha():
         d+=chr((ord(k[i])-65 -(ord(k[i%len(k)])-65))%26 + 65)
 
     else:
