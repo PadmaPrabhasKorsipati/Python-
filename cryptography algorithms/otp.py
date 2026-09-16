@@ -1,6 +1,6 @@
 p=input("Enter text:").upper()
 
-k=list(map(int,input("Enter values").split(" ")))
+k=list(map(int,input("Enter values").split()))
 
 e=""
 
