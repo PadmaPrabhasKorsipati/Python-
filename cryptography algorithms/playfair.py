@@ -33,7 +33,7 @@ while(i<len(p)):
 
         i+=2
 
-if len(p)%2:
+if len(x)%2:
     x+="X"
 
 
