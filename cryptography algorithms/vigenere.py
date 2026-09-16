@@ -3,10 +3,10 @@ k=input("Enter key:").upper()
 
 e=""
 
-for i in p:
+for i in range(len(p)):
 
     if i.isalpha():
-        e+=chr((ord(i)-65 + ord(k[i%len(k)])-65)%26 + 65)
+        e+=chr((ord(k[i])-65 + ord(k[i%len(k)])-65)%26 + 65)
 
     else:
         e+=i
@@ -15,10 +15,10 @@ print("Encrypted:"+e)
 
 d=""
 
-for i in e:
+for i in range(len(e)):
 
     if i.isalpha():
-        d+=chr((ord(i)-65 -(ord(k[i%len(k)])-65))%26 + 65)
+        d+=chr((ord(k[i])-65 -(ord(k[i%len(k)])-65))%26 + 65)
 
     else:
         d+=i
