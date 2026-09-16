@@ -1,5 +1,8 @@
 p=input("Enter text:").upper().replace(" ","")
 
+if len(p)%2:
+    p+="x"
+
 k=[[4,5],[7,9]]
 e=""
 for i in range(0,len(p),2):
