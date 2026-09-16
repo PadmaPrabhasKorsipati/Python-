@@ -28,7 +28,7 @@ while(i<len(p)):
 
     a=p[i]
 
-    b=p[i+1] if i<len(p) else "X"
+    b=p[i+1] if i+1<len(p) else "X"
 
     if a==b:
         x+=a+"X"
