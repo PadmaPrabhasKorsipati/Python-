@@ -1,5 +1,5 @@
-p=input("Enter text:")
-k=input("Enter key:")
+p=input("Enter text:").upper()
+k=input("Enter key:").upper()
 
 e=""
 
