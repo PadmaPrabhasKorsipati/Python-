@@ -1,39 +1,38 @@
-p=input("Plain text:").upper()
+p=input("Enter text:").upper()
 
-a=int(input("a:"))
+a=int(input("Enter a coprime:"))
 
-b=int(input("b:"))
+b=int(input("Enter a number from 0 to 25"))
 
 e=""
 
-for c in p:
+for i in p:
 
-    if c.isalpha():
-        e+=chr((a*ord(c)-65 +b)%26 +65)
+    if i.isalpha():
+        e+=chr((a*(ord(i)-65) + b)%26 +65)
 
     else:
-        e+=c
+        e+=i
 
-print("Encrypted:",e)
+print("Encrypted:"+e)
+
+d=""
+
 
 for x in range(26):
-
     if(a*x)%26==1:
         inv=x
         break
 
-d=""
-for c in e:
+for i in e:
 
-    if c.isalpha():
-        d+=chr((inv*((ord(c)-65)-b))%26+65)
+    if i.isalpha():
+        d+=chr((inv*(ord(i)-65)-b)%26+65)
 
     else:
-        d+=c
+        d+=i
 
-print("Decrypted:",d)
-
-    
+print("Decrypted:"+d)
 
 
 
