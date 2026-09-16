@@ -22,4 +22,4 @@ for a in A:
             else:
                 p+=ch
 
-        print("a="+a+" b="+b+" :"+p)
+        print("a=",a," b=",b," :",p)
