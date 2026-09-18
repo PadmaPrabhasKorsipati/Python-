@@ -1,4 +1,4 @@
-f = open("data.csv")
+f = open("scenario.csv")
 data = f.readlines()
 
 for row in data:
