@@ -1,4 +1,5 @@
-scenario,area
-bank payment fraud,Banking
-patient data protection,Healthcare
-online shopping fraud,E-Commerce
+src,dst,action
+low,internet,allow
+low,sensitive,block
+low,database,allow
+guest,sensitive,block
