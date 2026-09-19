@@ -1,4 +1,4 @@
-f=open("scenarios.csv")
+f=open("scenario.csv")
 
 next(f)
 
